@@ -1,15 +1,122 @@
 {
   "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/app/_not-found/page-3a4910e844c3c609.js"
+    ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/css/c734edfc3708e63e.css",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/layout-1f4f6e290fd2f0b5.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/app/about/page-1c7ba8649700442e.js"
+    ],
+    "/applications/dredging/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/applications/dredging/page-790b34d251658f9d.js"
+    ],
+    "/applications/mining/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/applications/mining/page-790b34d251658f9d.js"
+    ],
+    "/applications/industrial/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/applications/industrial/page-790b34d251658f9d.js"
+    ],
+    "/applications/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/applications/page-790b34d251658f9d.js"
+    ],
+    "/applications/petroleum/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/applications/petroleum/page-790b34d251658f9d.js"
+    ],
+    "/applications/sanitation-sewage/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/applications/sanitation-sewage/page-790b34d251658f9d.js"
+    ],
+    "/applications/water-desalination/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/applications/water-desalination/page-790b34d251658f9d.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/692-7caeaf1071aff4e2.js",
+      "static/chunks/app/contact/page-05788c5e63532da8.js"
     ],
     "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/page-ee87f125cb122735.js"
+    ],
+    "/resources/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/app/resources/page-1c7ba8649700442e.js"
+    ],
+    "/technology/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/technology/page-790b34d251658f9d.js"
+    ],
+    "/why-transmute/page": [
+      "static/chunks/webpack-74c939c87fa0092a.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-37e0f0325134c4d7.js",
+      "static/chunks/main-app-35dc936c3396cd79.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/app/why-transmute/page-790b34d251658f9d.js"
     ]
   }
 }
