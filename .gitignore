@@ -1,0 +1,14 @@
+/.DS_Store
+/.next
+/README.md
+/app
+/components
+/lib
+/next-env.d.ts
+/next.config.ts
+/node_modules
+/package-lock.json
+/postcss.config.mjs
+/public
+/tailwind.config.ts
+/tsconfig.json
