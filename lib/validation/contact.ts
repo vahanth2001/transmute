@@ -1,0 +1,1 @@
+import {z} from 'zod'; export const contactSchema=z.object({name:z.string().min(2),company:z.string().min(2),email:z.string().email(),phone:z.string().min(7),industry:z.string().min(1),application:z.string().min(1),location:z.string().min(2),details:z.string().min(10)}); export type ContactValues=z.infer<typeof contactSchema>;
