@@ -17,7 +17,7 @@ export default function Hero() {
               rgba(246,242,234,0.15) 55%,
               rgba(246,242,234,0) 100%
             ),
-            url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=2200&q=90")
+            url("/images/hero.png")
           `,
         }}
       />
