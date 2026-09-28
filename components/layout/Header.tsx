@@ -1,4 +1,84 @@
-'use client';
-import {useState} from 'react'; import Link from 'next/link'; import {Menu,X,ArrowRight} from 'lucide-react';
-const links=[['Products','/technology'],['Applications','/applications'],['Why Transmute','/why-transmute'],['Technology','/technology'],['About','/about'],['Contact','/contact']];
-export default function Header(){const[open,setOpen]=useState(false);return <header className="fixed top-0 z-50 w-full bg-carbon/95 text-white backdrop-blur border-b border-white/10"><div className="container h-20 flex items-center justify-between"><Link href="/" className="font-bold tracking-[.16em] text-xl">TRANSMUTE<span className="text-gold">.</span></Link><nav className="hidden lg:flex items-center gap-7 text-sm">{links.map(([t,h])=><Link key={h} href={h} className="hover:text-molten transition">{t}</Link>)}</nav><Link href="/contact" className="hidden lg:inline-flex btn btn-gold">Talk to an Engineer <ArrowRight size={16}/></Link><button className="lg:hidden" onClick={()=>setOpen(!open)} aria-label="Menu">{open?<X/>:<Menu/>}</button></div>{open&&<nav className="lg:hidden bg-carbon border-t border-white/10 px-6 py-6 flex flex-col gap-5">{links.map(([t,h])=><Link onClick={()=>setOpen(false)} key={h} href={h}>{t}</Link>)}<Link onClick={()=>setOpen(false)} href="/contact" className="btn btn-gold w-fit">Talk to an Engineer <ArrowRight size={16}/></Link></nav>}</header>}
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+
+const navItems = [
+  { label: "About Us", href: "/about" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Applications", href: "/applications" },
+  { label: "Insights", href: "/resources" },
+  { label: "Contact Us", href: "/contact" },
+];
+
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header className="site-header">
+      <div className="header-inner">
+        {/* Logo */}
+        <Link href="/" className="brand" onClick={() => setMenuOpen(false)}>
+            <img src="/images/transmute-logo.png" alt="Transmute" className="brand-logo"/>
+            <span className="brand-tagline">Engineered for Smoother, More Reliable Flow.</span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="desktop-nav" aria-label="Main navigation">
+          {navItems.map((item) => (
+            <Link key={item.href} href={item.href} className="nav-link">
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        {/* Desktop CTA */}
+        <Link href="/contact" className="header-cta">
+          <span>Talk to an Engineer</span>
+          <span className="cta-arrow">→</span>
+        </Link>
+
+        {/* Mobile Menu Button */}
+        <button
+          type="button"
+          className={`mobile-menu-button ${
+            menuOpen ? "is-open" : ""
+          }`}
+          onClick={() => setMenuOpen((prev) => !prev)}
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className={`mobile-nav ${menuOpen ? "is-open" : ""}`}>
+        <nav aria-label="Mobile navigation">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="mobile-nav-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              <span>{item.label}</span>
+              <span>→</span>
+            </Link>
+          ))}
+
+          <Link
+            href="/contact"
+            className="mobile-cta"
+            onClick={() => setMenuOpen(false)}
+          >
+            Talk to an Engineer
+            <span>→</span>
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+}
