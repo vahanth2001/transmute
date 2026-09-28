@@ -19,8 +19,13 @@ export default function Header() {
       <div className="header-inner">
         {/* Logo */}
         <Link href="/" className="brand" onClick={() => setMenuOpen(false)}>
-            <img src="/images/transmute-logo.png" alt="Transmute" className="brand-logo"/>
-            <span className="brand-tagline">Engineered for Smoother, More Reliable Flow.</span>
+            <div className="brand-main">
+                <img src="/icons/Transmute-logo.png" alt="" className="brand-symbol"/>
+                <span className="brand-name">TRANSMUTE</span>
+            </div>
+            <span className="brand-tagline">
+                Engineered for Smoother, More Reliable Flow.
+            </span>
         </Link>
 
         {/* Desktop Navigation */}
