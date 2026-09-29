@@ -31,7 +31,7 @@ export default function Footer() {
         className="
           grid
           w-full
-          grid-cols-1
+          grid-cols-2
           border-b
           border-white/15
           lg:grid-cols-[1.2fr_0.8fr_0.9fr_1fr]
