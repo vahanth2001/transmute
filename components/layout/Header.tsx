@@ -40,7 +40,7 @@ export default function Header() {
               "
             >
               <img
-                src="/icons/transmute-logo.png"
+                src="/icons/Transmute-logo.png"
                 alt="Transmute"
                 className="h-full w-full object-contain"
               />

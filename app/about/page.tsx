@@ -1,2 +1,9 @@
-import InnerHero from '@/components/InnerHero'; import SectionHeading from '@/components/ui/SectionHeading'; import {site} from '@/lib/data/site';
-export default function About(){return <main><InnerHero eyebrow="About Transmute" title="A product born from strategic collaboration." body="Transmute brings together the product vision and manufacturing partnership behind a targeted industrial transfer solution." image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1800&q=85"/><section className="section bg-ivory"><div className="container max-w-5xl"><SectionHeading eyebrow="Brand story" title="Engineering for the right place." body="The website should communicate a clear, evidence-based story around demanding transfer applications and targeted product use."/><div className="grid md:grid-cols-2 gap-4"><div className="bg-sand p-8 border border-border"><div className="text-gold text-xs uppercase tracking-widest">Partner</div><h3 className="font-['Barlow_Condensed'] uppercase text-4xl font-bold mt-5">{site.partners[0]}</h3><p className="text-gray-600 mt-4">Strategic collaboration behind Transmute.</p></div><div className="bg-sand p-8 border border-border"><div className="text-gold text-xs uppercase tracking-widest">Partner</div><h3 className="font-['Barlow_Condensed'] uppercase text-4xl font-bold mt-5">{site.partners[1]}</h3><p className="text-gray-600 mt-4">The current handoff describes 35+ years of manufacturing excellence and global presence.</p></div></div></div></section></main>}
+import AboutHero from "@/components/about/AboutHero";
+
+export default function AboutPage() {
+  return (
+    <main className="w-full overflow-x-hidden bg-cream">
+      <AboutHero />
+    </main>
+  );
+}
