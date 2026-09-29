@@ -1,2 +1,21 @@
-import Hero from '@/components/home/Hero'; import ProblemSection from '@/components/home/ProblemSection'; import MeetTransmute from '@/components/home/MeetTransmute'; import BenefitBand from '@/components/home/BenefitBand'; import ApplicationsGrid from '@/components/home/ApplicationsGrid'; import Comparison from '@/components/home/Comparison'; import CTA from '@/components/home/CTA';
-export default function Home(){return <main><Hero/><ProblemSection/><MeetTransmute/><BenefitBand/><ApplicationsGrid/><Comparison/><CTA/></main>}
+import Hero from '@/components/home/Hero'; 
+import ProblemSection from '@/components/home/ProblemSection'; 
+import MeetTransmute from '@/components/home/MeetTransmute'; 
+import BenefitBand from '@/components/home/BenefitBand'; 
+import ApplicationsGrid from '@/components/home/ApplicationsGrid'; 
+import Comparison from '@/components/home/Comparison'; 
+import CTA from '@/components/home/CTA';
+
+export default function Home(){
+    return (
+        <main>
+            <Hero/>
+            <ProblemSection/>
+            <MeetTransmute/>
+            <Comparison/>
+            <BenefitBand/>
+            <ApplicationsGrid/>
+            <CTA/>
+        </main>
+    )
+}
