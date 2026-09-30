@@ -19,14 +19,6 @@ const solutionItems = [
     label: "Steel Pipeline Solutions",
     href: "/solutions/steel-pipeline",
   },
-  {
-    label: "Ceramic Lined Solutions",
-    href: "/solutions/ceramic-lined",
-  },
-  {
-    label: "Engineered Transfer Systems",
-    href: "/solutions/engineered-transfer",
-  },
 ];
 
 export default function Header() {
@@ -45,7 +37,7 @@ export default function Header() {
         >
           <div className="flex items-center gap-2">
             <img
-              src="/icons/transmute-logo.png"
+              src="/icons/Transmute-logo.png"
               alt="Transmute"
               className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
             />
