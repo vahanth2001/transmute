@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto flex min-h-[76px] max-w-[1400px] items-center justify-between px-6 lg:px-12">
         <div className="flex items-center gap-2">
   <img
-    src="/icons/transmute-logo.png"
+    src="/icons/Transmute-logo.png"
     alt="Transmute"
     className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11 lg:h-12 lg:w-12"
   />
