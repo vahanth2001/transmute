@@ -5,294 +5,244 @@ import { useState } from "react";
 
 const navItems = [
   { label: "About Us", href: "/about" },
-  { label: "Solutions", href: "/solutions" },
   { label: "Applications", href: "/applications" },
-  { label: "Insights", href: "/resources" },
+  { label: "Insights", href: "/insights" },
   { label: "Contact Us", href: "/contact" },
+];
+
+const solutionItems = [
+  {
+    label: "Flexible Hose Solutions",
+    href: "/solutions/flexible-hose",
+  },
+  {
+    label: "Steel Pipeline Solutions",
+    href: "/solutions/steel-pipeline",
+  },
+  {
+    label: "Ceramic Lined Solutions",
+    href: "/solutions/ceramic-lined",
+  },
+  {
+    label: "Engineered Transfer Systems",
+    href: "/solutions/engineered-transfer",
+  },
 ];
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-cream">
-      {/* HEADER BAR */}
-      <div
-        className="
-          flex w-full items-center
-          px-[clamp(14px,3vw,120px)]
-          h-[clamp(64px,5vw,100px)]
-        "
-      >
+    <header className="sticky top-0 z-50 w-full border-b border-[#ded9ce] bg-[#f8f5ed]">
+      <div className="mx-auto flex h-[82px] w-full items-center justify-between px-6 lg:px-12">
+
         {/* LOGO */}
         <Link
           href="/"
           onClick={() => setMenuOpen(false)}
-          className="flex min-w-0 flex-col"
+          className="flex flex-col"
         >
-          <div className="flex items-center gap-[clamp(6px,0.6vw,14px)]">
-            {/* Transmute Symbol */}
-            <div
-              className="
-                flex shrink-0 items-center justify-center
-                h-[clamp(28px,2.5vw,52px)]
-                w-[clamp(28px,2.5vw,52px)]
-              "
-            >
-              <img
-                src="/icons/Transmute-logo.png"
-                alt="Transmute"
-                className="h-full w-full object-contain"
-              />
-            </div>
+          <div className="flex items-center gap-2">
+            <img
+              src="/icons/transmute-logo.png"
+              alt="Transmute"
+              className="h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
+            />
 
-            {/* Wordmark */}
-            <span
-              className="
-                whitespace-nowrap
-                text-[clamp(17px,1.8vw,40px)]
-                font-bold
-                tracking-[0.18em]
-                text-black
-              "
-            >
+            <span className="text-[25px] font-black tracking-[-1.5px] text-[#182027] sm:text-[29px] lg:text-[32px]">
               TRANSMUTE
             </span>
           </div>
 
-          {/* Tagline */}
-          <span
-            className="
-              mt-[clamp(2px,0.25vw,5px)]
-              hidden
-              text-[clamp(10px,0.75vw,15px)]
-              font-medium
-              tracking-[0.08em]
-              text-muted
-              sm:block
-            "
-          >
-            Engineered for Smoother, More Reliable Flow.
+          <span className="mt-1 hidden text-[8px] font-medium tracking-[0.2em] text-[#42474a] sm:block">
+            ENGINEERED FOR SMOOTHER, MORE RELIABLE FLOW.
           </span>
         </Link>
 
-        {/* DESKTOP NAVIGATION */}
-        <nav
-          aria-label="Main navigation"
-          className="
-            ml-auto hidden
-            items-center
-            gap-[clamp(16px,2vw,42px)]
-            lg:flex
-          "
-        >
-          {navItems.map((item) => (
+        {/* DESKTOP NAV */}
+        <nav className="hidden items-center gap-8 lg:flex">
+
+          <Link
+            href="/about"
+            className="py-7 text-[13px] font-medium text-[#30363a] hover:text-[#b77a17]"
+          >
+            About Us
+          </Link>
+
+          {/* SOLUTIONS DROPDOWN */}
+          <div
+            className="relative"
+            onMouseEnter={() => setSolutionsOpen(true)}
+            onMouseLeave={() => setSolutionsOpen(false)}
+          >
+            <button
+              type="button"
+              onClick={() => setSolutionsOpen((prev) => !prev)}
+              className="flex items-center gap-2 py-7 text-[13px] font-medium text-[#30363a] hover:text-[#b77a17]"
+            >
+              Solutions
+
+              <span
+                className={`text-[11px] transition-transform duration-200 ${
+                  solutionsOpen ? "rotate-180" : ""
+                }`}
+              >
+                ↓
+              </span>
+            </button>
+
+            {/* DROPDOWN */}
+            <div
+              className={`absolute left-1/2 top-full w-[290px] -translate-x-1/2 border border-[#ded9ce] bg-[#f8f5ed] shadow-lg transition-all duration-200 ${
+                solutionsOpen
+                  ? "visible translate-y-0 opacity-100"
+                  : "invisible -translate-y-2 opacity-0"
+              }`}
+            >
+              <div className="border-b border-[#ded9ce] px-5 py-4">
+                <span className="text-[10px] font-semibold tracking-[0.16em] text-[#b77a17]">
+                  OUR SOLUTIONS
+                </span>
+              </div>
+
+              {solutionItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group flex items-center justify-between border-b border-[#ded9ce] px-5 py-4 last:border-b-0 hover:bg-[#eee9df]"
+                  onClick={() => setSolutionsOpen(false)}
+                >
+                  <span className="text-[12px] font-medium text-[#20272c]">
+                    {item.label}
+                  </span>
+
+                  <span className="text-[#b77a17] transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* OTHER NAV */}
+          {navItems.slice(1).map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="
-                group relative
-                whitespace-nowrap
-                py-2
-                text-[clamp(15px,0.95vw,20px)]
-                font-medium
-                text-black
-                transition-colors
-                duration-200
-                hover:text-gold
-              "
+              className="py-7 text-[13px] font-medium text-[#30363a] hover:text-[#b77a17]"
             >
               {item.label}
-
-              <span
-                className="
-                  absolute
-                  bottom-0
-                  left-0
-                  h-px
-                  w-0
-                  bg-gold
-                  transition-all
-                  duration-200
-                  group-hover:w-full
-                "
-              />
             </Link>
           ))}
         </nav>
 
-        {/* DESKTOP CTA */}
+        {/* CTA */}
         <Link
           href="/contact"
-          className="
-            ml-[clamp(16px,2.5vw,50px)]
-            hidden
-            h-[clamp(36px,2.7vw,54px)]
-            shrink-0
-            items-center
-            gap-[clamp(8px,0.8vw,16px)]
-            bg-black
-            px-[clamp(14px,1.4vw,30px)]
-            text-[clamp(10px,0.9vw,20px)]
-            font-semibold
-            text-white
-            transition-colors
-            duration-200
-            hover:bg-gold
-            lg:flex
-          "
+          className="hidden items-center gap-3 bg-[#b77a17] px-6 py-3 text-[12px] font-semibold text-white hover:bg-black lg:flex"
         >
-          <span>Talk to an Engineer</span>
-
-          <span
-            className="
-              text-[clamp(14px,1vw,21px)]
-              leading-none
-            "
-          >
-            →
-          </span>
+          Talk to an Engineer
+          <span className="text-[17px]">→</span>
         </Link>
 
-        {/* MOBILE MENU BUTTON */}
+        {/* MOBILE BUTTON */}
         <button
           type="button"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
+          aria-label="Toggle menu"
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="
-            ml-auto
-            flex
-            h-11
-            w-11
-            shrink-0
-            flex-col
-            items-center
-            justify-center
-            gap-[5px]
-            lg:hidden
-          "
+          className="flex h-11 w-11 flex-col items-center justify-center gap-[5px] lg:hidden"
         >
           <span
-            className={`
-              block
-              h-[1.5px]
-              w-6
-              bg-black
-              transition-transform
-              duration-200
-              ${
-                menuOpen
-                  ? "translate-y-[6.5px] rotate-45"
-                  : ""
-              }
-            `}
+            className={`h-[2px] w-6 bg-black transition ${
+              menuOpen ? "translate-y-[7px] rotate-45" : ""
+            }`}
           />
 
           <span
-            className={`
-              block
-              h-[1.5px]
-              w-6
-              bg-black
-              transition-opacity
-              duration-200
-              ${menuOpen ? "opacity-0" : ""}
-            `}
+            className={`h-[2px] w-6 bg-black transition ${
+              menuOpen ? "opacity-0" : ""
+            }`}
           />
 
           <span
-            className={`
-              block
-              h-[1.5px]
-              w-6
-              bg-black
-              transition-transform
-              duration-200
-              ${
-                menuOpen
-                  ? "-translate-y-[6.5px] -rotate-45"
-                  : ""
-              }
-            `}
+            className={`h-[2px] w-6 bg-black transition ${
+              menuOpen ? "-translate-y-[7px] -rotate-45" : ""
+            }`}
           />
         </button>
       </div>
 
-      {/* MOBILE NAVIGATION */}
-      <div
-        className={`
-          overflow-hidden
-          border-t
-          border-border
-          bg-cream
-          transition-all
-          duration-300
-          lg:hidden
-          ${
-            menuOpen
-              ? "max-h-[500px] opacity-100"
-              : "max-h-0 opacity-0"
-          }
-        `}
-      >
-        <nav
-          aria-label="Mobile navigation"
-          className="
-            w-full
-            px-[clamp(14px,3vw,80px)]
-            pb-5
-          "
-        >
-          {navItems.map((item) => (
+      {/* MOBILE MENU */}
+      {menuOpen && (
+        <div className="border-t border-[#ded9ce] bg-[#f8f5ed] lg:hidden">
+          <nav className="px-6 py-4">
+
             <Link
-              key={item.href}
-              href={item.href}
+              href="/about"
               onClick={() => setMenuOpen(false)}
-              className="
-                flex
-                items-center
-                justify-between
-                border-b
-                border-border
-                py-4
-                text-sm
-                font-medium
-                text-black
-              "
+              className="block border-b border-[#ded9ce] py-4 text-sm font-medium"
             >
-              <span>{item.label}</span>
-
-              <span className="text-lg text-gold">
-                →
-              </span>
+              About Us
             </Link>
-          ))}
 
-          <Link
-            href="/contact"
-            onClick={() => setMenuOpen(false)}
-            className="
-              mt-5
-              flex
-              h-12
-              items-center
-              justify-between
-              bg-black
-              px-5
-              text-sm
-              font-semibold
-              text-white
-            "
-          >
-            <span>Talk to an Engineer</span>
+            {/* MOBILE SOLUTIONS */}
+            <div className="border-b border-[#ded9ce]">
+              <button
+                type="button"
+                onClick={() => setSolutionsOpen((prev) => !prev)}
+                className="flex w-full items-center justify-between py-4 text-sm font-medium"
+              >
+                Solutions
 
-            <span className="text-lg">
-              →
-            </span>
-          </Link>
-        </nav>
-      </div>
+                <span
+                  className={`transition-transform ${
+                    solutionsOpen ? "rotate-180" : ""
+                  }`}
+                >
+                  ↓
+                </span>
+              </button>
+
+              {solutionsOpen && (
+                <div className="pb-3 pl-4">
+                  {solutionItems.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="flex items-center justify-between border-t border-[#ded9ce] py-3 text-[12px] text-[#42474a]"
+                    >
+                      {item.label}
+                      <span className="text-[#b77a17]">→</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {navItems.slice(1).map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMenuOpen(false)}
+                className="block border-b border-[#ded9ce] py-4 text-sm font-medium"
+              >
+                {item.label}
+              </Link>
+            ))}
+
+            <Link
+              href="/contact"
+              onClick={() => setMenuOpen(false)}
+              className="mt-5 flex items-center justify-between bg-[#b77a17] px-5 py-4 text-sm font-semibold text-white"
+            >
+              Talk to an Engineer
+              <span>→</span>
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
