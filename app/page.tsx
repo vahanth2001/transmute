@@ -10,32 +10,32 @@ import {
   Wrench,
 } from "lucide-react";
 
-const IMG = "/images/transmute";
+const IMG = "/images";
 
 const industries = [
   {
     title: "MINING",
-    image: `${IMG}/mining.jpg`,
+    image: `${IMG}/8.jpg`,
   },
   {
     title: "DREDGING",
-    image: `${IMG}/dredging.jpg`,
+    image: `${IMG}/9.jpg`,
   },
   {
     title: "PETROLEUM & PROCESS",
-    image: `${IMG}/petroleum.jpg`,
+    image: `${IMG}/10.jpg`,
   },
   {
     title: "WATER & DESALINATION",
-    image: `${IMG}/water.jpg`,
+    image: `${IMG}/11.jpg`,
   },
   {
-    title: "SANITATION & WASTEWATER",
-    image: `${IMG}/wastewater.jpg`,
+    title: "OIL & GAS",
+    image: `${IMG}/12.jpg`,
   },
   {
     title: "INDUSTRIAL APPLICATIONS",
-    image: `${IMG}/industrial.jpg`,
+    image: `${IMG}/13.jpg`,
   },
 ];
 
@@ -43,25 +43,25 @@ const conditions = [
   {
     title: "HIGH-WEAR CONDITIONS",
     text: "Abrasive slurry and aggressive media demand materials and lining systems engineered for prolonged wear resistance.",
-    image: `${IMG}/condition-wear.jpg`,
+    image: `${IMG}/1.jpg`,
     icon: ShieldCheck,
   },
   {
     title: "DYNAMIC CONDITIONS",
     text: "Vibration, ground movement, equipment motion and changing routes require flexibility where conventional fixed systems may be restricted.",
-    image: `${IMG}/condition-dynamic.jpg`,
+    image: `${IMG}/2.jpg`,
     icon: Activity,
   },
   {
     title: "OPERATING DEMANDS",
     text: "Different sections of a transfer system may experience different pressures, loads and structural requirements.",
-    image: `${IMG}/condition-pressure.jpg`,
+    image: `${IMG}/3.jpg`,
     icon: Settings2,
   },
   {
     title: "SYSTEM CONFIGURATION",
     text: "Long straight runs, bends, discharge points and mobile sections each require different engineering approaches.",
-    image: `${IMG}/condition-routing.jpg`,
+    image: `${IMG}/4.jpg`,
     icon: Route,
   },
 ];
@@ -129,7 +129,7 @@ export default function Home() {
       <section className="relative min-h-[590px] overflow-hidden bg-[#eee9dd]">
         <div
           className="absolute inset-y-0 right-0 w-full bg-cover bg-center md:w-[67%]"
-          style={{ backgroundImage: `url(${IMG}/hero.jpg)` }}
+          style={{ backgroundImage: `url(${IMG}/hero.jpeg)` }}
         />
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#f5f1e8] via-[#f5f1e8]/95 via-40% to-transparent md:w-[70%]" />
@@ -202,15 +202,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-7 right-8 hidden max-w-[270px] border-l-2 border-[#c08425] pl-4 text-white md:block">
-          <p className="font-serif text-[20px] uppercase leading-tight">
-            One system.
-            <br />
-            Multiple technologies.
-            <br />
-            One performance standard.
-          </p>
-        </div>
+        <div className="absolute bottom-7 right-8 hidden max-w-[270px] border-l-2 border-[#c08425] bg-white/75 p-4 pl-4 text-black backdrop-blur-sm md:block">
+  <p className="font-serif text-[20px] uppercase leading-tight">
+    One system.
+    <br />
+    Multiple technologies.
+    <br />
+    One performance standard.
+  </p>
+</div>
       </section>
 
       {/* CONDITIONS */}
@@ -302,7 +302,7 @@ export default function Home() {
             {/* FLEX */}
             <div className="relative min-h-[340px] overflow-hidden bg-[#14181b] text-white">
               <img
-                src={`${IMG}/flex-solution.jpg`}
+                src={`${IMG}/5.jpg`}
                 alt="Transmute Flex"
                 className="absolute inset-0 h-full w-full object-cover opacity-80"
               />
@@ -341,7 +341,7 @@ export default function Home() {
             {/* STEEL */}
             <div className="relative min-h-[340px] overflow-hidden border border-black/10 bg-[#f8f6ef]">
               <img
-                src={`${IMG}/steel-solution.jpg`}
+                src={`${IMG}/6.jpg`}
                 alt="Transmute Steel"
                 className="absolute right-0 top-0 h-full w-[57%] object-cover"
               />
@@ -379,80 +379,116 @@ export default function Home() {
       </section>
 
       {/* SYSTEM DIAGRAM */}
-      <section
-        className="relative overflow-hidden bg-cover bg-center px-5 py-14 md:px-12 lg:px-16"
-        style={{ backgroundImage: `url(${IMG}/system-bg.jpg)` }}
-      >
-        <div className="absolute inset-0 bg-[#e8ddc8]/75" />
+<section className="relative overflow-hidden bg-[#e9dfcc] px-5 py-10 md:px-10 lg:px-16">
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${IMG}/system-bg.jpg)` }}
+  />
 
-        <div className="relative mx-auto max-w-[1340px] text-center">
-          <SectionLabel>RIGHT TECHNOLOGY. RIGHT LOCATION.</SectionLabel>
+  <div className="absolute inset-0 bg-[#eee5d5]/80" />
 
-          <h2 className="font-serif text-[32px] uppercase md:text-[44px]">
-            Engineer the system — not just the pipe.
-          </h2>
+  <div className="relative mx-auto max-w-[1350px]">
 
-          <p className="mx-auto mt-3 max-w-[730px] text-[11px] leading-[1.5] text-[#444]">
-            Transmute is built around understanding how the complete transfer
-            system operates and selecting the appropriate technology for each
-            critical section.
-          </p>
+    {/* Heading */}
+    <div className="text-center">
+      <SectionLabel>RIGHT TECHNOLOGY. RIGHT LOCATION.</SectionLabel>
 
-          <div className="mx-auto mt-10 flex max-w-[1200px] flex-col items-center gap-0 md:flex-row">
-            <div className="border border-black/20 bg-white px-4 py-4 text-[9px] font-bold uppercase">
-              PROCESS /
-              <br />
-              PUMP
-            </div>
+      <h2 className="font-serif text-[28px] font-bold uppercase leading-tight text-[#202428] md:text-[42px]">
+        Engineer the system — not just the pipe.
+      </h2>
 
-            <div className="hidden h-1 flex-1 bg-[#5b5d5d] md:block" />
+      <p className="mx-auto mt-2 max-w-[750px] text-[11px] leading-[1.5] text-[#444] md:text-[13px]">
+        Transmute is built around understanding how the complete transfer
+        system operates and selecting the appropriate technology for each
+        critical section.
+      </p>
+    </div>
 
-            <div className="w-full border-y-4 border-[#222] bg-white/60 py-3 md:w-auto md:min-w-[220px]">
-              <strong className="block text-[10px] uppercase">
-                Transmute Steel
-              </strong>
-              <span className="text-[9px]">Long Fixed Run</span>
-            </div>
+    {/* PIPE IMAGE + END LABELS */}
+    <div className="mx-auto mt-8 max-w-[1250px]">
 
-            <div className="hidden h-1 flex-1 bg-[#5b5d5d] md:block" />
+      <div className="flex items-center">
 
-            <div className="w-full border-y-4 border-[#222] bg-[#171b1e] py-3 text-white md:w-auto md:min-w-[220px]">
-              <strong className="block text-[10px] uppercase">
-                Transmute Flex
-              </strong>
-              <span className="text-[9px]">Vibration Zone</span>
-            </div>
-
-            <div className="hidden h-1 flex-1 bg-[#5b5d5d] md:block" />
-
-            <div className="w-full border-y-4 border-[#222] bg-white/60 py-3 md:w-auto md:min-w-[220px]">
-              <strong className="block text-[10px] uppercase">
-                Transmute Steel
-              </strong>
-              <span className="text-[9px]">Main Transfer Route</span>
-            </div>
-
-            <div className="hidden h-1 flex-1 bg-[#5b5d5d] md:block" />
-
-            <div className="w-full border-y-4 border-[#222] bg-[#171b1e] py-3 text-white md:w-auto md:min-w-[220px]">
-              <strong className="block text-[10px] uppercase">
-                Transmute Flex
-              </strong>
-              <span className="text-[9px]">Movement / Discharge Zone</span>
-            </div>
-
-            <div className="hidden h-1 flex-1 bg-[#5b5d5d] md:block" />
-
-            <div className="border border-black/20 bg-white px-4 py-4 text-[9px] font-bold uppercase">
-              DISCHARGE
-            </div>
-          </div>
-
-          <p className="mt-8 text-[11px] font-bold uppercase tracking-[0.22em]">
-            One system. Multiple technologies. One standard of reliable flow.
+        {/* PROCESS / PUMP */}
+        <div className="z-10 shrink-0 border border-[#777] bg-white px-3 py-3 shadow-sm md:px-5 md:py-4">
+          <p className="text-center text-[8px] font-bold uppercase leading-tight md:text-[10px]">
+            PROCESS /
+            <br />
+            PUMP
           </p>
         </div>
-      </section>
+
+        {/* ACTUAL PIPE IMAGE */}
+        <div className="relative min-w-0 flex-1">
+          <img
+            src={`${IMG}/7.jpg`}
+            alt="Transmute engineered transfer system"
+            className="block h-[100px] w-full object-cover object-center md:h-[150px] lg:h-[180px]"
+          />
+
+          {/* Optional slight fade on image edges */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-[#eee5d5] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[#eee5d5] to-transparent" />
+        </div>
+
+        {/* DISCHARGE */}
+        <div className="z-10 shrink-0 border border-[#777] bg-white px-3 py-3 shadow-sm md:px-5 md:py-4">
+          <p className="text-center text-[8px] font-bold uppercase md:text-[10px]">
+            DISCHARGE
+          </p>
+        </div>
+
+      </div>
+
+      {/* LABELS UNDER THE PIPE */}
+      <div className="grid grid-cols-4 border-t border-black/10 pt-4 text-center md:grid-cols-4">
+
+        <div>
+          <p className="text-[9px] font-bold uppercase tracking-wide md:text-[11px]">
+            TRANSMUTE STEEL
+          </p>
+          <p className="mt-1 text-[8px] text-[#555] md:text-[10px]">
+            Long Fixed Run
+          </p>
+        </div>
+
+        <div>
+          <p className="text-[9px] font-bold uppercase tracking-wide md:text-[11px]">
+            TRANSMUTE FLEX
+          </p>
+          <p className="mt-1 text-[8px] text-[#555] md:text-[10px]">
+            Vibration Zone
+          </p>
+        </div>
+
+        <div>
+          <p className="text-[9px] font-bold uppercase tracking-wide md:text-[11px]">
+            TRANSMUTE STEEL
+          </p>
+          <p className="mt-1 text-[8px] text-[#555] md:text-[10px]">
+            Main Transfer Route
+          </p>
+        </div>
+
+        <div>
+          <p className="text-[9px] font-bold uppercase tracking-wide md:text-[11px]">
+            TRANSMUTE FLEX
+          </p>
+          <p className="mt-1 text-[8px] text-[#555] md:text-[10px]">
+            Movement / Discharge Zone
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    {/* Bottom statement */}
+    <p className="mt-7 text-center text-[9px] font-bold uppercase tracking-[0.18em] text-[#292d30] md:text-[12px] md:tracking-[0.25em]">
+      ONE SYSTEM. MULTIPLE TECHNOLOGIES. ONE STANDARD OF RELIABLE FLOW.
+    </p>
+
+  </div>
+</section>
 
       {/* PERFORMANCE + INDUSTRIES */}
       <section className="bg-white px-5 py-16 md:px-12 lg:px-16">
@@ -466,7 +502,7 @@ export default function Home() {
               where it matters most.
             </h2>
 
-            <div className="mt-8 grid gap-7 sm:grid-cols-2">
+            <div className="mt-8 grid gap-7 sm:grid-cols-4">
               {values.map((value) => (
                 <div key={value.number} className="border-t border-black/15 pt-4">
                   <div className="font-serif text-[28px] text-[#bd8120]">
@@ -477,7 +513,7 @@ export default function Home() {
                     {value.title}
                   </h3>
 
-                  <p className="mt-2 text-[10px] leading-[1.5] text-[#555]">
+                  <p className="mt-2 text-[9px] leading-[1.5] text-[#555]">
                     {value.text}
                   </p>
                 </div>
