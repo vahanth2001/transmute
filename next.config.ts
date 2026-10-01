@@ -1,9 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: ["192.168.1.19","192.168.29.105"],
+  output: "export",
+
+  allowedDevOrigins: [
+    "192.168.1.19",
+    "192.168.29.105",
+  ],
 
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
