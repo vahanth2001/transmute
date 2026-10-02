@@ -505,9 +505,6 @@ export default function Home() {
             <div className="mt-8 grid gap-7 sm:grid-cols-4">
               {values.map((value) => (
                 <div key={value.number} className="border-t border-black/15 pt-4">
-                  <div className="font-serif text-[28px] text-[#bd8120]">
-                    {value.number}
-                  </div>
 
                   <h3 className="mt-1 text-[10px] font-black uppercase">
                     {value.title}
@@ -583,9 +580,6 @@ export default function Home() {
                 ["04", "SUPPORT LIFECYCLE PERFORMANCE", "Focus on reliability, maintainability and long-term value."],
               ].map(([number, title, text]) => (
                 <div key={number}>
-                  <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-[#bd8120] text-[10px] font-bold text-[#a97018]">
-                    {number}
-                  </div>
 
                   <h3 className="text-[9px] font-black uppercase leading-tight">
                     {title}
@@ -598,46 +592,113 @@ export default function Home() {
               ))}
             </div>
           </div>
+          <div className="relative overflow-hidden border border-black/10 bg-[#f5f0e6] p-6 md:p-8 lg:p-10">
 
-          <div className="border-l border-black/10 pl-0 lg:pl-10">
-            <SectionLabel>TRUSTED ACROSS DEMANDING INDUSTRIES</SectionLabel>
+  {/* Decorative accent */}
+  <div className="absolute right-0 top-0 h-full w-[4px] bg-[#c28a25]" />
 
-            <p className="max-w-[450px] text-[11px] leading-[1.5] text-[#555]">
-              Supporting organizations operating in mining, dredging,
-              infrastructure, energy and industrial sectors.
-            </p>
+  {/* Header */}
+  <div className="max-w-[560px]">
+    <SectionLabel>TRUSTED ACROSS DEMANDING INDUSTRIES</SectionLabel>
 
-            <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-5 text-[18px] font-black text-[#747474]">
-              <span>BHP</span>
-              <span>RioTinto</span>
-              <span>VALE</span>
-              <span>CAT</span>
-              <span>TechnipFMC</span>
-              <span>in</span>
-            </div>
+    <h3 className="mt-2 max-w-[520px] font-serif text-[24px] font-bold uppercase leading-[1.05] text-[#202428] md:text-[30px]">
+      Built for the environments where transfer performance matters.
+    </h3>
 
-            <div className="mt-8 border-t border-black/10 pt-6">
-              <span className="text-[8px] uppercase tracking-[0.25em] text-[#777]">
-                A PRODUCT BY
-              </span>
+    <p className="mt-4 max-w-[500px] text-[11px] leading-[1.6] text-[#555] md:text-[12px]">
+      Supporting organizations operating across mining, dredging,
+      infrastructure, energy and industrial sectors.
+    </p>
+  </div>
 
-              <div className="mt-3 flex gap-8">
-                <strong className="text-[13px]">
-                  TERRAMET
-                  <br />
-                  <span className="text-[8px] font-normal">
-                    VENTURES LLP
-                  </span>
-                </strong>
+  {/* Industry / organization names */}
+  <div className="mt-7 grid grid-cols-2 border-t border-black/10 sm:grid-cols-3">
 
-                <strong className="text-[13px]">
-                  BLSX
-                  <br />
-                  <span className="text-[8px] font-normal">LIMITED</span>
-                </strong>
-              </div>
-            </div>
-          </div>
+    <div className="flex h-[65px] items-center border-b border-r border-black/10 px-4">
+      <span className="text-[17px] font-black tracking-[-0.04em] text-[#3b3d3f]">
+        BHP
+      </span>
+    </div>
+
+    <div className="flex h-[65px] items-center border-b border-black/10 px-4 sm:border-r">
+      <span className="text-[15px] font-black tracking-[-0.04em] text-[#3b3d3f]">
+        Rio Tinto
+      </span>
+    </div>
+
+    <div className="flex h-[65px] items-center border-b border-r border-black/10 px-4 sm:border-r-0">
+      <span className="text-[17px] font-black text-[#3b3d3f]">
+        VALE
+      </span>
+    </div>
+
+    <div className="flex h-[65px] items-center border-r border-black/10 px-4">
+      <span className="text-[17px] font-black text-[#3b3d3f]">
+        CAT
+      </span>
+    </div>
+
+    <div className="flex h-[65px] items-center border-r border-black/10 px-4">
+      <span className="text-[14px] font-black tracking-[-0.03em] text-[#3b3d3f]">
+        TechnipFMC
+      </span>
+    </div>
+
+    <div className="flex h-[65px] items-center px-4">
+      <span className="text-[17px] font-black text-[#3b3d3f]">
+        in
+      </span>
+    </div>
+
+  </div>
+
+  {/* Product ownership */}
+  <div className="mt-7 border-t border-black/10 pt-6">
+
+    <div className="flex items-center gap-3">
+      <span className="h-[2px] w-7 bg-[#c28a25]" />
+      <span className="text-[8px] font-bold uppercase tracking-[0.25em] text-[#777]">
+        A PRODUCT BY
+      </span>
+    </div>
+
+    <div className="mt-5 grid grid-cols-2 gap-3">
+
+      {/* Terramet */}
+      <div className="border border-black/10 bg-white px-5 py-4">
+        <p className="text-[15px] font-black uppercase leading-none text-[#202428]">
+          Terramet
+        </p>
+
+        <p className="mt-1 text-[8px] font-medium uppercase tracking-[0.12em] text-[#777]">
+          Ventures LLP
+        </p>
+      </div>
+
+      {/* BLSX */}
+      <div className="border border-black/10 bg-white px-5 py-4">
+        <p className="text-[15px] font-black uppercase leading-none text-[#202428]">
+          BLSX
+        </p>
+
+        <p className="mt-1 text-[8px] font-medium uppercase tracking-[0.12em] text-[#777]">
+          Limited
+        </p>
+      </div>
+
+    </div>
+
+    {/* Bottom statement */}
+    <div className="mt-5 flex items-center gap-3">
+      <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#b07b20]">
+        Stronger together
+      </span>
+
+      <span className="h-px flex-1 bg-[#c28a25]/40" />
+    </div>
+
+  </div>
+</div>
         </div>
       </section>
 
