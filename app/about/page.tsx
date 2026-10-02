@@ -4,10 +4,11 @@ const aboutImages = {
   hero: "/images/about-hero.jpg",
   approach: "/images/about-approach.jpg",
   philosophy: "/images/about-philosophy.jpg",
-  hose: "/images/flexible-hose.jpg",
-  steel: "/images/steel-pipeline.jpg",
-  collaboration: "/images/collaboration.jpg",
-  cta: "/images/about-cta.jpg",
+  philosophypipe: "/images/philosophy-pipe.jpg",
+  hose: "/images/5.jpg",
+  steel: "/images/6.jpg",
+  collaboration: "/images/15.jpg",
+  cta: "/images/16.jpg",
 };
 
 const approachItems = [
@@ -263,73 +264,128 @@ export default function AboutUs() {
       {/* =========================================================
           ENGINEER THE SYSTEM
       ========================================================= */}
-      <section className="relative overflow-hidden bg-[#151b1f] text-white">
-        <img
-          src={aboutImages.philosophy}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-60"
-        />
+      {/* THE TRANSMUTE PHILOSOPHY */}
+<section
+  className="relative overflow-hidden bg-[#151b1f] text-white"
+  style={{
+    backgroundImage: `url("${aboutImages.philosophy}")`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-[#101519]/75" />
 
-        <div className="absolute inset-0 bg-[#101519]/65" />
+  <div className="relative mx-auto max-w-[1340px] px-5 py-14 md:px-10 lg:px-12">
 
-        <div className="relative mx-auto max-w-[1500px] px-6 py-16 lg:px-10">
+    {/* HEADER */}
+    <div className="max-w-[900px]">
+      <p className="text-[10px] font-bold uppercase tracking-[5px] text-[#c28a29]">
+  THE TRANSMUTE PHILOSOPHY
+</p>
 
-          <p className="text-[11px] font-bold uppercase tracking-[5px] text-[#c28a29]">
-            The Transmute Philosophy
-          </p>
+      <h2 className="mt-3 font-serif text-[36px] font-black uppercase leading-[0.95] tracking-tight md:text-[52px]">
+        Engineer the system — not just the pipe.
+      </h2>
 
-          <div className="max-w-[900px]">
-            <h2 className="mt-3 font-condensed text-[40px] font-black uppercase leading-[0.95] sm:text-[54px]">
-              Engineer the system — not just the pipe.
-            </h2>
+      <p className="mt-6 max-w-[900px] text-[11px] leading-[1.65] text-white/85 md:text-[13px]">
+        Different sections of a material transfer system operate under
+        different conditions. Some require the flexibility of hose, others
+        the strength of steel. TRANSMUTE engineers the complete system,
+        matching each technology to the right role for a safer, more
+        reliable and longer-lasting flow solution.
+      </p>
+    </div>
 
-            <p className="mt-5 text-[15px] leading-[1.55] text-white/90">
-              Different sections of a material transfer system operate under
-              different conditions. Some require the flexibility of hose,
-              others the strength of steel. TRANSMUTE engineers the complete
-              system, matching each technology to the right role for a safer,
-              more reliable and longer-lasting flow solution.
-            </p>
-          </div>
+    {/* PIPE SYSTEM */}
+    <div className="relative mt-10 w-full overflow-hidden">
+      <img
+        src={aboutImages.philosophypipe}
+        alt="Transmute engineered transfer system"
+        className="block h-auto w-full object-cover"
+      />
+    </div>
 
-          {/* Pipeline visual */}
-          <div className="relative mt-12">
-            <div className="h-[35px] w-full rounded-full border-y-4 border-[#777] bg-gradient-to-b from-[#9c9c96] via-[#373b3c] to-[#171a1b] shadow-2xl" />
+    {/* SYSTEM SECTIONS */}
+    <div className="mt-6 grid grid-cols-2 gap-y-8 md:grid-cols-6 md:gap-x-5 md:gap-y-0">
 
-            <div className="absolute inset-x-0 top-1/2 grid -translate-y-1/2 grid-cols-6">
-              {systemSections.map((item, index) => (
-                <div
-                  key={`${item.title}-${index}`}
-                  className="border-r border-white/40 px-3 text-center last:border-0"
-                >
-                  <span className="text-[11px] font-black text-white sm:text-sm">
-                    {item.title}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+      {/* 01 */}
+      <div className="border-l border-white/20 pl-4">
+        <h3 className="text-[10px] font-black uppercase tracking-wide text-[#c28a29] md:text-[11px]">
+          PROCESS / PUMP
+        </h3>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3 lg:grid-cols-6">
-            {systemSections.map((item, index) => (
-              <div key={`${item.title}-description-${index}`}>
-                <h3 className="text-[13px] font-black uppercase text-[#d9a13d]">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-[12px] leading-[1.4] text-white/75">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
+        <p className="mt-2 text-[9px] leading-[1.5] text-white/70 md:text-[10px]">
+          Connects to a wide range of pumps and process equipment.
+        </p>
+      </div>
 
-          <div className="mt-10 text-center">
-            <p className="text-[12px] font-bold uppercase tracking-[4px] text-[#d49b30]">
-              One system. Multiple technologies. One standard of reliable flow.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* 02 */}
+      <div className="border-l border-white/20 pl-4">
+        <h3 className="text-[10px] font-black uppercase tracking-wide text-[#c28a29] md:text-[11px]">
+          FLEXIBLE HOSE SECTION
+        </h3>
+
+        <p className="mt-2 text-[9px] leading-[1.5] text-white/70 md:text-[10px]">
+          Absorbs movement, relieves stress and manages vibration.
+        </p>
+      </div>
+
+      {/* 03 */}
+      <div className="border-l border-white/20 pl-4">
+        <h3 className="text-[10px] font-black uppercase tracking-wide text-[#c28a29] md:text-[11px]">
+          STEEL PIPELINE
+        </h3>
+
+        <p className="mt-2 text-[9px] leading-[1.5] text-white/70 md:text-[10px]">
+          Provides strength for longer runs and static sections.
+        </p>
+      </div>
+
+      {/* 04 */}
+      <div className="border-l border-white/20 pl-4">
+        <h3 className="text-[10px] font-black uppercase tracking-wide text-[#c28a29] md:text-[11px]">
+          FLEXIBLE HOSE SECTION
+        </h3>
+
+        <p className="mt-2 text-[9px] leading-[1.5] text-white/70 md:text-[10px]">
+          Accommodates expansion and dynamic movement.
+        </p>
+      </div>
+
+      {/* 05 */}
+      <div className="border-l border-white/20 pl-4">
+        <h3 className="text-[10px] font-black uppercase tracking-wide text-[#c28a29] md:text-[11px]">
+          STEEL PIPELINE
+        </h3>
+
+        <p className="mt-2 text-[9px] leading-[1.5] text-white/70 md:text-[10px]">
+          Maintains flow and discharge with maximum reliability.
+        </p>
+      </div>
+
+      {/* 06 */}
+      <div className="border-l border-white/20 pl-4">
+        <h3 className="text-[10px] font-black uppercase tracking-wide text-[#c28a29] md:text-[11px]">
+          DISCHARGE
+        </h3>
+
+        <p className="mt-2 text-[9px] leading-[1.5] text-white/70 md:text-[10px]">
+          Completes the system.
+        </p>
+      </div>
+
+    </div>
+
+    {/* BOTTOM STATEMENT */}
+    <div className="mt-9 text-center">
+      <p className="text-[9px] font-black uppercase tracking-[0.3em] text-[#c28a29] md:text-[11px]">
+        One system. Multiple technologies. One standard of reliable flow.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       {/* =========================================================
           OUR SOLUTIONS

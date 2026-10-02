@@ -707,7 +707,7 @@ export default function Home() {
       {/* CTA / FORM */}
       <section
         className="relative overflow-hidden bg-cover bg-center px-5 py-16 text-white md:px-12 lg:px-16"
-        style={{ backgroundImage: `url(${IMG}/cta.jpg)` }}
+        style={{ backgroundImage: `url(${IMG}/14.jpg)` }}
       >
         <div className="absolute inset-0 bg-[#101518]/80" />
 
