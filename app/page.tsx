@@ -384,7 +384,6 @@ export default function Home() {
 <section className="relative overflow-hidden bg-[#e9dfcc] px-5 py-10 md:px-10 lg:px-16">
   <div
     className="absolute inset-0 bg-cover bg-center"
-    style={{ backgroundImage: `url(${IMG}/system-bg.jpg)` }}
   />
 
   <div className="absolute inset-0 bg-[#eee5d5]/80" />
