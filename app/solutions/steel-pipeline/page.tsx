@@ -56,19 +56,19 @@ const ceramicApplications = [
 const industries = [
   {
     title: "MINING",
-    image: "/images/steel/mining.jpg",
+    image: "/images/28.jpg",
   },
   {
     title: "INDUSTRIAL PROCESS",
-    image: "/images/steel/industrial-process.jpg",
+    image: "/images/29.jpg",
   },
   {
     title: "DREDGING",
-    image: "/images/steel/dredging.jpg",
+    image: "/images/30.jpg",
   },
   {
     title: "SLURRY TRANSPORT",
-    image: "/images/steel/slurry-transport.jpg",
+    image: "/images/31.jpg",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function SteelPipelinePage() {
       {/* HERO */}
       <section className="relative min-h-[520px] overflow-hidden">
         <Image
-          src="/images/steel/steel-hero.jpg"
+          src="/images/25.jpg"
           alt="Transmute steel pipeline"
           fill
           priority
@@ -148,7 +148,7 @@ export default function SteelPipelinePage() {
         <div className="mx-auto grid max-w-[1400px] lg:grid-cols-2">
           <div className="relative min-h-[480px]">
             <Image
-              src="/images/steel/steel-pipe-main.jpg"
+              src="/images/26.jpg"
               alt="Transmute steel pipe"
               fill
               className="object-cover"
@@ -270,10 +270,10 @@ export default function SteelPipelinePage() {
 
           <div className="relative order-1 min-h-[480px] lg:order-2">
             <Image
-              src="/images/steel/ceramic-lined-steel.jpg"
+              src="/images/27.jpg"
               alt="Ceramic lined steel pipe"
               fill
-              className="object-cover"
+              className="object-fit"
             />
           </div>
         </div>
@@ -327,7 +327,7 @@ export default function SteelPipelinePage() {
       {/* CTA */}
       <section className="relative min-h-[350px] overflow-hidden bg-[#15191b]">
         <Image
-          src="/images/steel/steel-cta.jpg"
+          src="/images/32.jpg"
           alt="Steel pipeline industrial facility"
           fill
           className="object-cover"
