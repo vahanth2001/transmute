@@ -6,19 +6,19 @@ import Image from "next/image";
 const applications = [
   {
     title: "MINING",
-    image: "/images/mining.jpg",
+    image: "/images/20.jpg",
   },
   {
     title: "DREDGING",
-    image: "/images/dredging.jpg",
+    image: "/images/21.jpg",
   },
   {
     title: "INDUSTRIAL TRANSFER",
-    image: "/images/industrial-transfer.jpg",
+    image: "/images/22.jpg",
   },
   {
     title: "PUMP CONNECTIONS",
-    image: "/images/pump-connections.jpg",
+    image: "/images/23.jpg",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function FlexibleHosePage() {
       <section className="relative min-h-[510px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/flexible-hero.jpg"
+            src="/images/17.jpg"
             alt="Transmute flexible hose solution"
             fill
             priority
@@ -121,7 +121,7 @@ export default function FlexibleHosePage() {
       >
         <div className="relative min-h-[450px]">
           <Image
-            src="/images/transmute-rubber-hose.jpg"
+            src="/images/18.jpg"
             alt="Transmute Rubber Hose"
             fill
             className="object-cover"
@@ -264,7 +264,7 @@ export default function FlexibleHosePage() {
 
         <div className="relative order-1 min-h-[450px] lg:order-2">
           <Image
-            src="/images/ceramic-lined-rubber-hose.jpg"
+            src="/images/19.jpg"
             alt="Transmute Ceramic-Lined Rubber Hose"
             fill
             className="object-cover"
@@ -288,7 +288,7 @@ export default function FlexibleHosePage() {
       <section className="relative overflow-hidden bg-[#171c20]">
         <div className="absolute inset-0 opacity-35">
           <Image
-            src="/images/flexible-cta.jpg"
+            src="/images/24.jpg"
             alt=""
             fill
             className="object-cover"
