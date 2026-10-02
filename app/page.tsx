@@ -348,7 +348,8 @@ export default function Home() {
 
               <div className="absolute inset-0 bg-gradient-to-r from-[#f8f6ef] via-[#f8f6ef]/95 to-transparent" />
 
-              <div className="relative z-10 max-w-[470px] p-7">
+              <div className="relative z-10 flex min-h-[340px] max-w-[490px] flex-col justify-between p-7">
+                <div>
                 <h3 className="font-serif text-[24px] uppercase">
                   Transmute Steel
                 </h3>
@@ -364,10 +365,11 @@ export default function Home() {
                   long transfer runs, structural rigidity and demanding
                   operating conditions.
                 </p>
+                </div>
 
                 <a
                   href="/solutions/steel-pipeline"
-                  className="mt-8 inline-flex items-center gap-2 bg-[#c08a2b] px-4 py-3 text-[10px] font-bold uppercase text-white"
+                  className="mt-6 inline-flex w-fit items-center gap-2 bg-[#c08a2b] px-4 py-3 text-[10px] font-bold uppercase text-white"
                 >
                   Explore Steel Pipeline Solutions
                   <ArrowRight size={14} />
