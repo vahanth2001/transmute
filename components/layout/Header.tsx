@@ -6,7 +6,7 @@ import { useState } from "react";
 const navItems = [
   { label: "About Us", href: "/about" },
     { label: "Applications", href: "/applications" },
-    { label: "Why Us", href:"/why-transmute"},
+    { label: "Why us", href:"/why-transmute"},
   { label: "Insights", href: "/insights" },
   { label: "Contact Us", href: "/contact" },
 ];
