@@ -94,7 +94,7 @@ export default function ApplicationsPage() {
       ========================================================= */}
       <section className="relative min-h-[520px] overflow-hidden">
         <Image
-          src="/images/applications/applications-hero.jpg"
+          src="/images/33.jpg"
           alt="Transmute material transfer system"
           fill
           priority
