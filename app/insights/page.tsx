@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const caseStudies = [
   {
-    image: "/images/insights/mining-pipeline.jpg",
+    image: "/images/49.jpg",
     category: "MINING",
     title: "HIGH-ABRASION SLURRY TRANSFER",
     solution: "Transmute Ceramic-Lined Steel Pipe",
@@ -13,7 +13,7 @@ const caseStudies = [
       "Addressing excessive wear in a long-distance slurry pipeline.",
   },
   {
-    image: "/images/insights/dredging.jpg",
+    image: "/images/50.jpg",
     category: "DREDGING",
     title: "FLEXIBLE TRANSFER IN DYNAMIC CONDITIONS",
     solution: "Transmute Rubber Hose",
@@ -21,7 +21,7 @@ const caseStudies = [
       "Reliable transfer solution for a moving dredging system in a marine environment.",
   },
   {
-    image: "/images/insights/petroleum.jpg",
+    image: "/images/51.jpg",
     category: "PETROLEUM & PROCESS",
     title: "RELIABLE TRANSFER IN PROCESS APPLICATION",
     solution: "Transmute Steel Pipe",
@@ -29,7 +29,7 @@ const caseStudies = [
       "Robust pipeline solution for a critical process transfer line.",
   },
   {
-    image: "/images/insights/water.jpg",
+    image: "/images/52.jpg",
     category: "WATER & DESALINATION",
     title: "INTAKE AND DISCHARGE TRANSFER SYSTEM",
     solution: "Transmute Steel Pipe and Flexible Hose",
@@ -37,15 +37,15 @@ const caseStudies = [
       "Engineered solution for a high-capacity seawater transfer system.",
   },
   {
-    image: "/images/insights/wastewater.jpg",
-    category: "SANITATION & WASTEWATER",
+    image: "/images/53.jpg",
+    category: "Oil & Gas",
     title: "RELIABLE TRANSFER FOR WASTEWATER SYSTEM",
     solution: "Transmute Rubber Hose",
     description:
       "Flexible hose solution for a municipal wastewater transfer application.",
   },
   {
-    image: "/images/insights/industrial.jpg",
+    image: "/images/54.jpg",
     category: "INDUSTRIAL APPLICATIONS",
     title: "MATERIAL TRANSFER IN INDUSTRIAL OPERATION",
     solution: "Transmute Ceramic-Lined Rubber Hose",
@@ -56,23 +56,23 @@ const caseStudies = [
 
 const engineeringInsights = [
   {
-    image: "/images/insights/abrasive-wear.jpg",
+    image: "/images/49.jpg",
     title: "UNDERSTANDING ABRASIVE WEAR IN SLURRY SYSTEMS",
   },
   {
-    image: "/images/insights/flexible-hose.jpg",
+    image: "/images/50.jpg",
     title: "WHEN FLEXIBLE HOSE IS THE RIGHT CHOICE",
   },
   {
-    image: "/images/insights/ceramic-lining.jpg",
+    image: "/images/51.jpg",
     title: "THE ROLE OF CERAMIC LINING IN HIGH-WEAR APPLICATIONS",
   },
   {
-    image: "/images/insights/vibration.jpg",
+    image: "/images/52.jpg",
     title: "MANAGING VIBRATION AT PUMP CONNECTIONS",
   },
   {
-    image: "/images/insights/transition.jpg",
+    image: "/images/53.jpg",
     title: "DESIGNING TRANSITION ZONES BETWEEN STEEL AND FLEXIBLE SECTIONS",
   },
 ];
@@ -85,7 +85,7 @@ export default function InsightsPage() {
       <section className="relative min-h-[470px] overflow-hidden bg-[#eee8da]">
         <div className="absolute inset-0">
           <Image
-            src="/images/insights/insights-hero.jpg"
+            src="/images/5.jpg"
             alt="Transmute transfer system"
             fill
             priority
@@ -139,7 +139,7 @@ export default function InsightsPage() {
           
           <div className="relative min-h-[390px] overflow-hidden">
             <Image
-              src="/images/insights/featured-case.jpg"
+              src="/images/48.jpg"
               alt="Featured Transmute case study"
               fill
               className="object-cover"
@@ -233,11 +233,6 @@ export default function InsightsPage() {
 
             <div className="flex max-w-[600px] flex-wrap gap-2">
               {[
-                "All",
-                "Flexible Hose",
-                "Ceramic-Lined Hose",
-                "Steel Pipe",
-                "Ceramic-Lined Steel Pipe",
               ].map((item, index) => (
                 <button
                   key={item}
@@ -254,14 +249,7 @@ export default function InsightsPage() {
           </div>
 
           <div className="mb-8 flex flex-wrap gap-2">
-            {[
-              "All",
-              "Mining",
-              "Dredging",
-              "Process",
-              "Water",
-              "Industrial",
-            ].map((item, index) => (
+            {[].map((item, index) => (
               <button
                 key={item}
                 className={`border px-5 py-2 text-[12px] ${
@@ -384,7 +372,7 @@ export default function InsightsPage() {
       <section className="relative overflow-hidden bg-[#161a1c] text-white">
         <div className="absolute inset-0">
           <Image
-            src="/images/insights/insights-cta.jpg"
+            src="/images/14.jpg"
             alt=""
             fill
             className="object-cover opacity-45"

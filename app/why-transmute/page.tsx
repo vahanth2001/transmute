@@ -4,23 +4,23 @@ import Link from "next/link";
 const operatingConditions = [
   {
     title: "PUMP CONNECTIONS",
-    image: "/images/why-us/pump-connections.jpg",
+    image: "/images/1.jpg",
   },
   {
     title: "ROUTE TRANSITIONS",
-    image: "/images/why-us/route-transitions.jpg",
+    image: "/images/2.jpg",
   },
   {
     title: "LONG FIXED RUNS",
-    image: "/images/why-us/long-fixed-runs.jpg",
+    image: "/images/3.jpg",
   },
   {
     title: "MOVEMENT ZONES",
-    image: "/images/why-us/movement-zones.jpg",
+    image: "/images/4.jpg",
   },
   {
     title: "DISCHARGE POINTS",
-    image: "/images/why-us/discharge-points.jpg",
+    image: "/images/5.jpg",
   },
 ];
 
@@ -28,22 +28,22 @@ const differences = [
   {
     title: "APPLICATION-\nFIRST THINKING",
     text: "We begin by understanding the material, environment and operating conditions before recommending a solution.",
-    image: "/images/why-us/application-first.jpg",
+    image: "/images/42.jpg",
   },
   {
     title: "MULTIPLE TECHNOLOGIES.\nONE SYSTEM.",
     text: "Transmute brings together flexible hose and steel pipeline solutions within one engineered platform.",
-    image: "/images/why-us/multiple-technologies.jpg",
+    image: "/images/43.jpg",
   },
   {
     title: "INTEGRATED SYSTEM\nTHINKING",
     text: "A transfer system is more than individual pipe sections. We consider how each section works together as one complete system.",
-    image: "/images/why-us/integrated-system.jpg",
+    image: "/images/44.jpg",
   },
   {
     title: "FOCUS ON OPERATIONAL\nVALUE",
     text: "Our solutions are designed for reliability, maintainability and long-term performance.",
-    image: "/images/why-us/operational-value.jpg",
+    image: "/images/45.jpg",
   },
 ];
 
@@ -51,22 +51,22 @@ const values = [
   {
     title: "RELIABILITY",
     text: "Solutions are engineered around actual operating conditions to support dependable performance where it matters most.",
-    image: "/images/why-us/reliability.jpg",
+    image: "/images/22.jpg",
   },
   {
     title: "CONTINUITY",
     text: "Appropriate technology selection can help reduce unnecessary operational disruption and support smoother material transfer.",
-    image: "/images/why-us/continuity.jpg",
+    image: "/images/20.jpg",
   },
   {
     title: "MAINTAINABILITY",
     text: "A system designed with its critical sections in mind can make inspection, maintenance and replacement more manageable.",
-    image: "/images/why-us/maintainability.jpg",
+    image: "/images/16.jpg",
   },
   {
     title: "LIFECYCLE VALUE",
     text: "Performance should be evaluated over time. We consider service life, operational demands, maintenance requirements and long-term value.",
-    image: "/images/why-us/lifecycle-value.jpg",
+    image: "/images/15.jpg",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function WhyUsPage() {
       {/* HERO */}
       <section className="relative min-h-[560px] overflow-hidden bg-[#151a1d]">
         <Image
-          src="/images/why-us/why-us-hero.jpg"
+          src="/images/41.jpg"
           alt="Transmute transfer system"
           fill
           priority
@@ -228,7 +228,7 @@ export default function WhyUsPage() {
       {/* ENGINEERING PHILOSOPHY */}
       <section className="relative overflow-hidden bg-[#151a1d] px-6 py-20 text-white lg:px-12">
         <Image
-          src="/images/why-us/engineering-philosophy.jpg"
+          src="/images/47.jpg"
           alt="Transmute engineered transfer system"
           fill
           className="object-cover opacity-45"
@@ -270,7 +270,7 @@ export default function WhyUsPage() {
           <div className="mt-12">
             <div className="relative h-[180px] overflow-hidden">
               <Image
-                src="/images/why-us/system-pipeline.jpg"
+                src="/images/46.jpg"
                 alt="Transmute system"
                 fill
                 className="object-cover"
@@ -361,7 +361,7 @@ export default function WhyUsPage() {
             <div className="grid overflow-hidden border border-[#ded8cb] bg-[#f5f2ea] md:grid-cols-2">
               <div className="relative min-h-[300px]">
                 <Image
-                  src="/images/why-us/flexible-hose.jpg"
+                  src="/images/5.jpg"
                   alt="Transmute flexible hose"
                   fill
                   className="object-cover"
@@ -404,7 +404,7 @@ export default function WhyUsPage() {
             <div className="grid overflow-hidden border border-[#ded8cb] bg-[#f5f2ea] md:grid-cols-2">
               <div className="relative min-h-[300px]">
                 <Image
-                  src="/images/why-us/steel-pipeline.jpg"
+                  src="/images/25.jpg"
                   alt="Transmute steel pipeline"
                   fill
                   className="object-cover"
@@ -449,7 +449,7 @@ export default function WhyUsPage() {
       {/* FINAL CTA */}
       <section className="relative overflow-hidden bg-[#151a1d] px-6 py-16 text-white lg:px-12">
         <Image
-          src="/images/why-us/why-us-cta.jpg"
+          src="/images/14.jpg"
           alt="Transmute pipeline"
           fill
           className="object-cover opacity-40"

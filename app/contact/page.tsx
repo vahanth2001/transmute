@@ -10,7 +10,7 @@ export default function ContactPage() {
       {/* ================= HERO ================= */}
       <section className="relative min-h-[390px] overflow-hidden lg:min-h-[445px]">
         <img
-          src="/images/contact-hero.jpg"
+          src="/images/55.jpg"
           alt="Transmute pipeline system"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -282,7 +282,7 @@ export default function ContactPage() {
 
           <div className="relative h-[310px] overflow-hidden">
             <img
-              src="/images/contact-pipeline.jpg"
+              src="/images/56.jpg"
               alt="Transmute pipeline"
               className="h-full w-full object-cover"
             />
@@ -372,7 +372,7 @@ export default function ContactPage() {
       {/* ================= DARK CTA ================= */}
       <section className="relative overflow-hidden bg-[#171b1e]">
         <img
-          src="/images/contact-cta.jpg"
+          src="/images/14.jpg"
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-45"
         />

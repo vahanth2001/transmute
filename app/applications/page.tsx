@@ -5,32 +5,32 @@ const industries = [
   {
     title: "MINING",
     text: "Engineered solutions for slurry, tailings, mineral transfer and abrasive-service applications.",
-    image: "/images/applications/mining.jpg",
+    image: "/images/8.jpg",
   },
   {
     title: "DREDGING",
     text: "Flexible and rigid transfer solutions for changing routes, movement, marine environments and abrasive media.",
-    image: "/images/applications/dredging.jpg",
+    image: "/images/9.jpg",
   },
   {
     title: "PETROLEUM & PROCESS",
     text: "Transfer solutions for demanding industrial and process environments where material and system integrity are essential.",
-    image: "/images/applications/petroleum-process.jpg",
+    image: "/images/10.jpg",
   },
   {
     title: "WATER & DESALINATION",
     text: "Pipeline solutions for intake, discharge and process-transfer systems operating under demanding environmental conditions.",
-    image: "/images/applications/water-desalination.jpg",
+    image: "/images/11.jpg",
   },
   {
-    title: "SANITATION & WASTEWATER",
-    text: "Transfer systems engineered for municipal and industrial wastewater applications.",
-    image: "/images/applications/wastewater.jpg",
+    title: "OIL & GAS",
+    text: "Transfer systems engineered for Oil and Gas̱ applications.",
+    image: "/images/12.jpg",
   },
   {
     title: "INDUSTRIAL APPLICATIONS",
     text: "Engineered transfer solutions for diverse industrial environments, media types and operating conditions.",
-    image: "/images/applications/industrial.jpg",
+    image: "/images/13.jpg",
   },
 ];
 
@@ -38,27 +38,27 @@ const conditions = [
   {
     title: "ABRASION",
     text: "Where media causes accelerated wear and long-term durability becomes critical.",
-    image: "/images/applications/abrasion.jpg",
+    image: "/images/35.jpg",
   },
   {
     title: "MOVEMENT",
     text: "Where vibration, dynamic equipment or route changes affect the system.",
-    image: "/images/applications/movement.jpg",
+    image: "/images/36.jpg",
   },
   {
     title: "PRESSURE",
     text: "Where sections of the system require pressure and structural consideration.",
-    image: "/images/applications/pressure.jpg",
+    image: "/images/37.jpg",
   },
   {
     title: "ROUTING",
     text: "Where long runs, bends, elevation changes or constrained layouts affect design.",
-    image: "/images/applications/routing.jpg",
+    image: "/images/38.jpg",
   },
   {
     title: "ENVIRONMENT",
     text: "Where operating conditions influence materials, protection and service life.",
-    image: "/images/applications/environment.jpg",
+    image: "/images/39.jpg",
   },
 ];
 
@@ -66,22 +66,22 @@ const solutions = [
   {
     title: "TRANSMUTE RUBBER HOSE",
     text: "For movement, connections and route adaptability.",
-    image: "/images/applications/rubber-hose.jpg",
+    image: "/images/18.jpg",
   },
   {
     title: "TRANSMUTE CERAMIC-LINED RUBBER HOSE",
     text: "For flexible high-wear sections.",
-    image: "/images/applications/ceramic-rubber-hose.jpg",
+    image: "/images/19.jpg",
   },
   {
     title: "TRANSMUTE STEEL PIPE",
     text: "For fixed, long-distance transfer.",
-    image: "/images/applications/steel-pipe.jpg",
+    image: "/images/26.jpg",
   },
   {
     title: "TRANSMUTE CERAMIC-LINED STEEL PIPE",
     text: "For rigid high-wear pipeline sections.",
-    image: "/images/applications/ceramic-steel-pipe.jpg",
+    image: "/images/27.jpg",
   },
 ];
 
@@ -237,7 +237,7 @@ export default function ApplicationsPage() {
       ========================================================= */}
       <section className="relative min-h-[360px] overflow-hidden">
         <Image
-          src="/images/applications/application-system.jpg"
+          src="/images/34.jpg"
           alt="Transmute transfer system"
           fill
           className="object-cover object-center"
@@ -380,7 +380,7 @@ export default function ApplicationsPage() {
       ========================================================= */}
       <section className="relative min-h-[330px] overflow-hidden">
         <Image
-          src="/images/applications/application-cta.jpg"
+          src="/images/40.jpg"
           alt="Transmute industrial transfer solution"
           fill
           className="object-cover object-center"
