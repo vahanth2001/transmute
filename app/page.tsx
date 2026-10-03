@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React,{ useState } from "react";
 import {
   ArrowRight,
   ChevronDown,
@@ -122,6 +124,7 @@ function GoldButton({
 }
 
 export default function Home() {
+  const [videoOpen, setVideoOpen] = useState(false);
   return (
     <main className="min-h-screen bg-[#f5f1e8] text-[#171d22]">
 
@@ -155,16 +158,23 @@ export default function Home() {
             </p>
 
             <div className="mt-7 flex flex-wrap gap-4">
-              <GoldButton>Explore Transmute Solutions</GoldButton>
+  <button
+    type="button"
+    onClick={() => setVideoOpen(true)}
+    className="inline-flex items-center gap-3 bg-[#b27b20] px-7 py-4 text-sm font-bold text-white transition hover:bg-[#946418]"
+  >
+    Play Video
+    <span className="text-xs">▶</span>
+  </button>
 
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-3 border border-[#ad7417] bg-white/50 px-5 py-3 text-[11px] font-bold uppercase"
-              >
-                Request Application Review
-                <ArrowRight size={15} />
-              </a>
-            </div>
+  <a
+    href="/applications"
+    className="inline-flex items-center gap-3 border border-[#b27b20] bg-white/80 px-7 py-4 text-sm font-bold text-[#222] transition hover:bg-[#b27b20] hover:text-white"
+  >
+    Explore Applications
+    <span>→</span>
+  </a>
+</div>
 
             <div className="mt-10 grid max-w-[580px] grid-cols-1 gap-5 sm:grid-cols-3">
               {[
@@ -810,6 +820,28 @@ export default function Home() {
         </div>
       </section>
 
+      {videoOpen && (
+  <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/90 p-5">
+    <div className="relative w-full max-w-[1100px]">
+      <button
+        type="button"
+        onClick={() => setVideoOpen(false)}
+        className="absolute -right-2 -top-12 flex h-10 w-10 items-center justify-center text-3xl text-white"
+        aria-label="Close video"
+      >
+        ×
+      </button>
+
+      <video
+        src="/videos/1.mp4"
+        controls
+        autoPlay
+        playsInline
+        className="w-full"
+      />
+    </div>
+  </div>
+)}
     </main>
   );
 }
