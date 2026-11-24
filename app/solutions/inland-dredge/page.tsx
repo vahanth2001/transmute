@@ -589,7 +589,7 @@ export default function InlandDredgingPage() {
               rgba(10,15,14,0.85),
               rgba(10,15,14,0.68)
             ),
-            url('/images/solutions/sunset-river.jpg')
+            url('/images/dredgercta.png')
           `,
         }}
       >
