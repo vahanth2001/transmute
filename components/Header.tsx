@@ -20,6 +20,10 @@ const solutionItems = [
     label: "Steel Pipeline Solutions",
     href: "/solutions/steel-pipeline",
   },
+  {
+    label: "Inland Dredging Solutions",
+    href: "/solutions/inland-dredge",
+  },
 ];
 
 export default function Header() {
