@@ -139,7 +139,7 @@ export default function InlandDredgingPage() {
               rgba(10,16,15,0.45) 57%,
               rgba(10,16,15,0.08) 100%
             ),
-            url('/images/solutions/hero-dredging.png')
+            url('/images/dredger.png')
           `,
         }}
       >
@@ -239,7 +239,7 @@ export default function InlandDredgingPage() {
 
           <div className="relative h-[240px] overflow-hidden lg:col-span-4 lg:h-[290px]">
             <Image
-              src="/images/solutions/canal-aerial.jpg"
+              src="/images/dredgerpge.png"
               alt="Aerial view of an inland canal"
               fill
               className="object-cover"
