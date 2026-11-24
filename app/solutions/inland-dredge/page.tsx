@@ -239,7 +239,7 @@ export default function InlandDredgingPage() {
 
           <div className="relative h-[240px] overflow-hidden lg:col-span-4 lg:h-[290px]">
             <Image
-              src="/images/dredgerpge.png"
+              src="/images/dredgerpage.png"
               alt="Aerial view of an inland canal"
               fill
               className="object-cover"
