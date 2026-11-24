@@ -139,7 +139,7 @@ export default function InlandDredgingPage() {
               rgba(10,16,15,0.45) 57%,
               rgba(10,16,15,0.08) 100%
             ),
-            url('/images/dredger.png')
+            url('/images/57.png')
           `,
         }}
       >
@@ -239,7 +239,7 @@ export default function InlandDredgingPage() {
 
           <div className="relative h-[240px] overflow-hidden lg:col-span-4 lg:h-[290px]">
             <Image
-              src="/images/dredgerpage.png"
+              src="/images/58.png"
               alt="Aerial view of an inland canal"
               fill
               className="object-cover"
@@ -381,10 +381,10 @@ export default function InlandDredgingPage() {
       <section className="relative overflow-hidden bg-[#101513] py-16 lg:py-20">
         <div className="absolute inset-0">
           <Image
-            src="/images/solutions/dredging-hose.jpg"
+            src="/images/60.png"
             alt=""
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-100"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#101513]/80 via-[#101513]/95 to-[#101513]" />
@@ -395,7 +395,7 @@ export default function InlandDredgingPage() {
           <div className="lg:col-span-4">
             <div className="relative h-[250px] overflow-hidden rounded-lg sm:h-[310px]">
               <Image
-                src="/images/solutions/dredging-hose.jpg"
+                src="/images/59.png"
                 alt="Industrial reinforced dredging hose"
                 fill
                 className="object-cover"
